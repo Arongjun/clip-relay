@@ -37,8 +37,8 @@ type ClipboardItem = GridItem;
 
 export default function Home() {
   const API_BASE = (process.env.NEXT_PUBLIC_API_BASE || '').replace(/\/$/, '');
-  const REPO_URL = 'https://github.com/paopaoandlingyia/clip-relay';
-  const ISSUES_URL = 'https://github.com/paopaoandlingyia/clip-relay/issues';
+  const REPO_URL = 'https://github.com/Arongjun/clip-relay';
+  const ISSUES_URL = 'https://www.wuenrong.com';
   const [items, setItems] = useState<ClipboardItem[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [isLoading, setIsLoading] = useState(true);
@@ -678,7 +678,7 @@ function SettingsDrawer({
           </Button>
           <Button variant="ghost" className="w-full justify-start" asChild>
             <a href={issuesUrl} target="_blank" rel="noopener noreferrer">
-              <Bug className="h-4 w-4 mr-2" /> 提交问题
+              <Bug className="h-4 w-4 mr-2" /> 阿荣博客
             </a>
           </Button>
           <div className="flex items-center justify-between py-2">
